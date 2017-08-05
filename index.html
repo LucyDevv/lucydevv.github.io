@@ -40,10 +40,39 @@ https://materializecss.com/
 
 <!-- Custom padding style -->
 <style>
+/* Padding */
 .padding-1 {
 padding-left: 55px;
 padding-right: 55px;
 }
+                                                       
+/* Arrow */
+
+a { color: white; text-decoration: none; }
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Background */
+@bg: #2d2d37; // Dark blue
+body { background: @bg;}
 </style>
 
 </head><!-- Head section end -->
@@ -70,8 +99,9 @@ padding-right: 55px;
 
 <br><center>
         <img src="https://i.brightskyz.xyz/images/9a5fef.png" alt="Quixl"/>
-        <h1>Quixl</h1>
-        <h4>The best multipurpouse Discord bot</h4>
+        <div class="arrow bounce">
+  <a class="fa fa-arrow-down fa-2x" href="#"></a>
+</div>
 </center>
 
 <!-- Footer -->
